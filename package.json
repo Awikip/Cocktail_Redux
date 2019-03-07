@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tslint -p ."
+    "lint": "tslint -p .",
+    "deploy": "yarn lint && yarn build && set CI=true yarn test"
   },
   "eslintConfig": {
     "extends": "react-app"
